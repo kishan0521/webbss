@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Endless Runner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-container">
+    <header class="top-bar">
+      <div class="stat">
+        <span>SCORE</span>
+        <strong id="score">0</strong>
+      </div>
+      <div class="stat">
+        <span>COINS</span>
+        <strong id="coins">0</strong>
+      </div>
+      <div class="stat">
+        <span>BEST</span>
+        <strong id="best">0</strong>
+      </div>
+    </header>
+
+    <canvas id="gameCanvas" aria-label="Endless runner game"></canvas>
+
+    <section id="overlay" class="overlay">
+      <h1 id="messageTitle">ENDLESS RUNNER</h1>
+      <p id="messageText">
+        Dodge obstacles, jump, and collect coins!
+      </p>
+      <button id="startBtn">START GAME</button>
+    </section>
+
+    <div class="mobile-controls">
+      <button data-action="left" aria-label="Move left">◀</button>
+      <button data-action="jump" aria-label="Jump">⬆</button>
+      <button data-action="slide" aria-label="Slide">⬇</button>
+      <button data-action="right" aria-label="Move right">▶</button>
+    </div>
+
+    <p class="help">
+      ← → Move &nbsp; | &nbsp; ↑ Jump &nbsp; | &nbsp; ↓ Slide
+    </p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
